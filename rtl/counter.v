@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 `default_nettype none
 // Παράδειγμα από το Μέρος 0 (κεφ. 0.4): μόνο για να μάθεις τη ροή προσομοίωσης.
 module counter (
