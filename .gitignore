@@ -1,0 +1,7 @@
+sim/
+*.vcd
+*.vvp
+*.elf
+*.bin
+*.hex
+*.dump
