@@ -74,6 +74,7 @@ module tb_regfile;
         #1;
         if(rd1 !== 32'd3 || rd2 !== 32'd6)begin
             $display("FAIL ports: rd1=%h rd2=%h", rd1, rd2);
+            errors = errors + 1;      
         end
         if (errors == 0) $display("PASS");
         else             $display("FAIL: %0d errors", errors);
