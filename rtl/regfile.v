@@ -17,7 +17,8 @@ reg [31:0] data[0:31];
 
 always@(posedge clk)begin
     if((we3 == 1) & (a3 != 5'b0))begin
-    data[wa] <= wd3;
+    data[a3] <= wd3;
+
     end
 end
 
