@@ -66,7 +66,7 @@ module tb_regfile;
         for (i = 1; i < 32; i = i + 1)
             write_reg(i, i*3);
         for (i = 1; i < 32; i = i + 1)
-            check_read(i, i*4);
+            check_read(i, i*3);
 
         // TODO 5: οι δύο θύρες ανάγνωσης είναι ανεξάρτητες:
         //         a1 = 1, a2 = 2 ταυτόχρονα, και το rd1, rd2 δίνουν το καθένα το σωστό.
