@@ -70,7 +70,11 @@ module tb_regfile;
 
         // TODO 5: οι δύο θύρες ανάγνωσης είναι ανεξάρτητες:
         //         a1 = 1, a2 = 2 ταυτόχρονα, και το rd1, rd2 δίνουν το καθένα το σωστό.
-
+        a1 = 5'd1; a2 = 5'd2;
+        #1;
+        if(rd1 !== 32'd3 || rd2 !== 32'd6)begin
+            $display("FAIL ports: rd1=%h rd2=%h", rd1, rd2);
+        end
         if (errors == 0) $display("PASS");
         else             $display("FAIL: %0d errors", errors);
         $finish;
